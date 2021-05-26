@@ -13,13 +13,13 @@ namespace mvp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BusController : ControllerBase
+    public class ServiceBusController : ControllerBase
     {
         private readonly IConfiguration configuration;
         private readonly ILogger logger;
-        public BusController(IConfiguration configuration, ILoggerFactory loggerFactory) {
+        public ServiceBusController(IConfiguration configuration, ILoggerFactory loggerFactory) {
             this.configuration = configuration;
-            this.logger = loggerFactory.CreateLogger<BusController>();
+            this.logger = loggerFactory.CreateLogger<ServiceBusController>();
         }
 
         // GET api/values
